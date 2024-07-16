@@ -9,7 +9,7 @@
 <pre>
 	$posts = Post::find(1);
 	$posts = DB::table('posts')->where('id','=',1)->first();
-
+	
 	$posts = Post::select(['id','title'])->find(1);
 	$posts = DB::table('posts')->where('id','=',1)->select(['id','title'])->first();
 	$users = User::select(['id', 'name'])->get();
